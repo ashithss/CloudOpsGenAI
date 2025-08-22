@@ -1,0 +1,19 @@
+model_name: "codellama-13b-instruct"
+training_data:
+  - dockerfile_examples/
+  - k8s_manifests/
+  - ci_cd_configs/
+  - repo_structures/
+
+fine_tuning:
+  technique: "LoRA"  # Low-Rank Adaptation
+  rank: 16
+  alpha: 32
+  dropout: 0.1
+  
+training_params:
+  learning_rate: 2e-4
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  max_steps: 1000
+  warmup_steps: 100

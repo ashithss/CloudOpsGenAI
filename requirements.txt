@@ -1,0 +1,25 @@
+# Core dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+gitpython>=3.1.40
+pyyaml>=6.0
+jinja2>=3.1.2
+
+# Web framework (for future API endpoints)
+fastapi>=0.104.1
+uvicorn>=0.24.0
+
+# Code analysis
+tree-sitter>=0.20.4
+
+# Optional: Enhanced features
+rich>=13.6.0  # For better console output
+click>=8.1.0  # For better CLI interface
+
+#training devops model
+fsspec>=2023.1.0,<2024.10.0
+torch>=2.0.0
+transformers>=4.40.0
+datasets>=2.19.0
+peft>=0.10.0
+accelerate>=0.30.0
